@@ -1,0 +1,448 @@
+{
+    "if": {
+        "prefix": "if",
+        "body": [
+            "if ${1:condition}",
+            "\t$0",
+            "endif"
+        ],
+        "description": "if"
+    },
+    "ifel": {
+        "prefix": "ifel",
+        "body": [
+            "if ${1:condition}",
+            "\t${2:// body}",
+            "elseif ${3:condition}",
+            "\t$0",
+            "endif"
+        ],
+        "description": "ifel"
+    },
+    "else": {
+        "prefix": "else",
+        "body": [
+            "else",
+            "\t$0"
+        ],
+        "description": "else"
+    },
+    "while": {
+        "prefix": "while",
+        "body": [
+            "while ${1:condition}",
+            "\t$0",
+            "endwhile"
+        ],
+        "description": "while"
+    },
+    "for": {
+        "prefix": "for",
+        "body": [
+            "for ${1:number}",
+            "\t$0",
+            "endfor"
+        ],
+        "description": "for"
+    },
+    "for_to": {
+        "prefix": "fort",
+        "body": [
+            "for ${1:number} to ${2:number}",
+            "\t$0",
+            "endfor"
+        ],
+        "description": "for to"
+    },
+    "for_list": {
+        "prefix": "forl",
+        "body": [
+            "for ${1:number} to '${2:list}'",
+            "\t$0",
+            "endfor"
+        ],
+        "description": "for to list"
+    },
+    "for_to_list": {
+        "prefix": "fortl",
+        "body": [
+            "for ${1:number} to ${2:number} in '${3:list}'",
+            "\t$0",
+            "endfor"
+        ],
+        "description": "for to in list"
+    },
+    "fly": {
+        "prefix": "togglefly",
+        "description": "Toggle flying"
+    },
+    "useprimaryability": {
+        "prefix": "useprimaryability",
+        "description": "Use primary ability."
+    },
+    "usesecondaryability": {
+        "prefix": "usesecondaryability",
+        "description": "Use secondary ability."
+    },
+    "clickobject": {
+        "prefix": "clickobject",
+        "body": "clickobject '${1:serial}'",
+        "description": "Single click a object"
+    },
+    "attack": {
+        "prefix": "attack",
+        "body": "attack '${1:serial}'",
+        "description": "Attack a mobile"
+    },
+    "bandageself": {
+        "prefix": "bandageself",
+        "description": "Try to use bandages on yourself. Depending on your client version this will either send a use bandage on self packet, or it will just use the bandages in which case you need to waitfortarget and target yourself"
+    },
+    "useobject": {
+        "prefix": "useobject",
+        "body": "useobject '${1:serial}' '${2|true,false|}'",
+        "description": "Use (double click) an object"
+    },
+    "target": {
+        "prefix": "target",
+        "body": "target '${1:serial}'",
+        "description": "Use your target cursor on an object or mobile"
+    },
+    "waitfortarget": {
+        "prefix": "waitfortarget",
+        "body": "waitfortarget '${1|0,1,2|}' '${2:timeout}'",
+        "description": "Wait for a target cursor"
+    },
+    "usetype": {
+        "prefix": "usetype",
+        "body": "usetype '${1:serial}' '${2:graphic}' '${3:hue}'",
+        "description": "Use an object by object type"
+    },
+    "pause": {
+        "prefix": "pause",
+        "body": "pause '${1:duration}'",
+        "description": "Pause the script for a duration in MS"
+    },
+    "useskill": {
+        "prefix": "useskill",
+        "body": "useskill '${1:skillname}'",
+        "description": "Use a skill by name. Skillname can be a partial match."
+    },
+    "walk": {
+        "prefix": "walk",
+        "body": "walk '${1|north,right,east,down,south,left,west,up|}'",
+        "description": "Walk in a direction"
+    },
+    "run": {
+        "prefix": "run",
+        "body": "run '${1|north,right,east,down,south,left,west,up|}'",
+        "description": "Run in a direction"
+    },
+    "canceltarget": {
+        "prefix": "canceltarget",
+        "description": "Clear a target cursor"
+    },
+    "sysmsg": {
+        "prefix": "sysmsg",
+        "body": "sysmsg '${1:msg}' '${2:hue}'",
+        "description": "Show a message in sys messages. This is not sent to the server, only you can see it. hue is optional."
+    },
+    "moveitem": {
+        "prefix": "moveitem",
+        "body": "moveitem '${1:item}' '${2:container}' '${3:amount}'",
+        "description": "Move an item to a container. Amount is optional."
+    },
+    "moveitemoffset": {
+        "prefix": "moveitemoffset",
+        "body": "moveitemoffset '${1:item}' '${2:amt}' '${3:x offset}' '${4:y offset}' '${5:z offset}'",
+        "description": "Move an item to the ground near you. Use 0 amt to grab the full stack."
+    },
+    "cast": {
+        "prefix": "cast",
+        "body": "cast '${1:spell name}'",
+        "description": "Cast a spell by name. Spell name can be a partial match."
+    },
+    "waitforjournal": {
+        "prefix": "waitforjournal",
+        "body": "waitforjournal '${1:the text}' '${2:duration in ms}'",
+        "description": "Wait for text to appear in journal. Duration is in milliseconds."
+    },
+    "settimer": {
+        "prefix": "settimer",
+        "body": "settimer '${1:name}' '${2:duration}'",
+        "description": "Create a timer. If the timer already exists, this is ignored until the timer expires. Timers are shared between scripts, so make sure to name them uniquely."
+    },
+    "removetimer": {
+        "prefix": "removetimer",
+        "body": "removetimer '${1:name}'",
+        "description": "Remove a timer."
+    },
+    "setalias": {
+        "prefix": "setalias",
+        "body": "setalias '${1:name}' '${2:serial}'",
+        "description": "Set an alias to a serial."
+    },
+    "unsetalias": {
+        "prefix": "unsetalias",
+        "body": "unsetalias '${1:alias}'",
+        "description": "Unset an alias."
+    },
+    "movetype": {
+        "prefix": "movetype",
+        "body": "movetype '${1:graphic}' '${2:source}' '${3:destination}' '${4:amount}' '${5:color}' '${6:range}'",
+        "description": "Move any object matching the type. Amount, color, and range are optional."
+    },
+    "toggleautoloot": {
+        "prefix": "toggleautoloot",
+        "body": "toggleautoloot",
+        "description": "Toggle the built in simple auto loot system."
+    },
+    "info": {
+        "prefix": "info",
+        "body": "info",
+        "description": "Create a target cursor to show info about an object."
+    },
+    "setskill": {
+        "prefix": "setskill",
+        "body": "setskill '${1:name}' '${2|up,down,locked|}'",
+        "description": "Set skill locked/up/down."
+    },
+    "getproperties": {
+        "prefix": "getproperties",
+        "body": "getproperties '${1:serial}'",
+        "description": "Request item properties from the server. Note: This will pause the script until we have received the properties unless you add ! modifier."
+    },
+    "turn": {
+        "prefix": "turn",
+        "body": "turn '${1|north,right,east,down,south,left,west,up|}'",
+        "description": "Turn your character in a direction."
+    },
+    "createlist": {
+        "prefix": "createlist",
+        "body": "createlist '${1:name}'",
+        "description": "Create a list."
+    },
+    "pushlist": {
+        "prefix": "pushlist",
+        "body": "pushlist '${1:name}' '${2:value}' '${3:front}'",
+        "description": "Add a value to a list. 'front' is optional; it will be added to the back of the list by default. Add ! modifier (pushlist!) to only add the item if it is not already in the list."
+    },
+    "clearlist": {
+        "prefix": "clearlist",
+        "body": "clearlist '${1:name}'",
+        "description": "Clear a list of its items."
+    },
+    "removelist": {
+        "prefix": "removelist",
+        "body": "removelist '${1:name}'",
+        "description": "Remove a list."
+    },
+    "rename": {
+        "prefix": "rename",
+        "body": "rename '${1:serial}' '${2:name}'",
+        "description": "Rename a pet."
+    },
+    "logout": {
+        "prefix": "logout",
+        "body": "logout",
+        "description": "Logout of the game."
+    },
+    "shownames": {
+        "prefix": "shownames",
+        "body": "shownames",
+        "description": "Show all names of mobiles."
+    },
+    "timerexists": {
+        "prefix": "timerexists",
+        "body": "timerexists '${1:123bandage}'",
+        "description": "Check if a timer exists. Returns true/false."
+    },
+    "timerexpired": {
+        "prefix": "timerexpired",
+        "body": "timerexpired '${1:123bandage}'",
+        "description": "Check if a timer has expired."
+    },
+    "findtype": {
+        "prefix": "findtype",
+        "body": "findtype '${1:graphic}' '${2:source}' '${3:color}' '${4:range}'",
+        "description": "Find an object by type. If an object is found, you can use the 'found' alias to reference it. Color and range are optional."
+    },
+    "findalias": {
+        "prefix": "findalias",
+        "body": "findalias '${1:backpack}'",
+        "description": "Find an object you set as an alias. If found, you can use 'found' to reference it."
+    },
+    "skill": {
+        "prefix": "skill",
+        "body": "skill '${1:name}' '${2|true,false|}'",
+        "description": "Get the value or a skill. False is default, returns value; true returns base."
+    },
+    "poisoned": {
+        "prefix": "poisoned",
+        "body": "poisoned '${1:serial}'",
+        "description": "Get poisoned status of a mobile. If serial is not included, it will check your personal poisoned status."
+    },
+    "war": {
+        "prefix": "war",
+        "body": "war",
+        "description": "Check if you are in warmode."
+    },
+    "contents": {
+        "prefix": "contents",
+        "body": "contents '${1:container}'",
+        "description": "Count the contents of a container (Top level only). Note: This counts a stack as a single item, so 10 stacks of 30 would only return 10 items."
+    },
+    "findobject": {
+        "prefix": "findobject",
+        "body": "findobject '${1:serial}' '${2:container}'",
+        "description": "Try to find an object by serial."
+    },
+    "distance": {
+        "prefix": "distance",
+        "body": "distance '${1:enemy}'",
+        "description": "Get the distance of an item or mobile."
+    },
+    "injournal": {
+        "prefix": "injournal",
+        "body": "injournal '${1:search text, case sensitive}'",
+        "description": "Check if text exists in journal."
+    },
+    "inparty": {
+        "prefix": "inparty",
+        "body": "inparty '${1:serial}'",
+        "description": "Check if a mobile is in your party."
+    },
+    "property": {
+        "prefix": "property",
+        "body": "property '${1:serial}' '${2:text}'",
+        "description": "Search properties of an item for text."
+    },
+    "buffexists": {
+        "prefix": "buffexists",
+        "body": "buffexists '${1:name}'",
+        "description": "Check if a buff is active. Note: name can be a partial match."
+    },
+    "findlayer": {
+        "prefix": "findlayer",
+        "body": "findlayer '${1|onehanded, twohanded, shoes, pants, shirt, helmet, gloves, ring, talisman, necklace, hair, waist, torso, bracelet, face, beard, tunic, earrings, arms, cloak, backpack, robe, skirt, legs, mount, bank|}'",
+        "description": "Check if there is an item in a layer. Note: If an item is found, you can use 'found' to access it."
+    },
+    "gumpexists": {
+        "prefix": "gumpexists",
+        "body": "gumpexists '${1:gumpid}'",
+        "description": "Check if a gump is open."
+    },
+    "listcount": {
+        "prefix": "listcount",
+        "body": "listcount '${1:name}'",
+        "description": "Count the number of items in a list. Will return 0 if the list does not exist."
+    },
+    "listexists": {
+        "prefix": "listexists",
+        "body": "listexists '${1:name}'",
+        "description": "Check if a list exists."
+    },
+    "inlist": {
+        "prefix": "inlist",
+        "body": "inlist '${1:name}' '${2:value}'",
+        "description": "Check if a list contains a value."
+    },
+    "nearesthostile": {
+        "prefix": "nearesthostile",
+        "body": "nearesthostile '${1:distance}'",
+        "description": "Find the nearest hostile (Gray, criminal, murderer, enemy). Note: If a hostile was found, you can use 'found' to reference it."
+    },
+    "counttype": {
+        "prefix": "counttype",
+        "body": "counttype '${1:graphic}' '${2:source}' '${3:hue}' '${4:ground range}'",
+        "description": "Get the count of a type of item in a container. Hue, and range are optional."
+    },
+    "dead": {
+        "prefix": "dead",
+        "body": "dead '${1:serial}'",
+        "description": "Check if a mobile is dead. Note: If you don't include serial, it will default to yourself."
+    },
+    "name": {
+        "prefix": "name",
+        "description": "Char name."
+    },
+    "hits": {
+        "prefix": "hits",
+        "description": "hits."
+    },
+    "maxhits": {
+        "prefix": "maxhits",
+        "description": "maxhits."
+    },
+    "stam": {
+        "prefix": "stam",
+        "description": "stam."
+    },
+    "maxstam": {
+        "prefix": "maxstam",
+        "description": "maxstam."
+    },
+    "mana": {
+        "prefix": "mana"
+    },
+    "maxmana": {
+        "prefix": "maxmana"
+    },
+    "x": {
+        "prefix": "x",
+        "description": "x, y, z."
+    },
+    "y": {
+        "prefix": "y",
+        "description": "x, y, z."
+    },
+    "z": {
+        "prefix": "z",
+        "description": "x, y, z."
+    },
+    "true": {
+        "prefix": "true"
+    },
+    "false": {
+        "prefix": "false"
+    },
+    "found": {
+        "prefix": "found",
+        "description": "Available when using commands like findtype."
+    },
+    "backpack": {
+        "prefix": "backpack"
+    },
+    "bank": {
+        "prefix": "bank"
+    },
+    "lastobject": {
+        "prefix": "lastobject"
+    },
+    "lasttarget": {
+        "prefix": "lasttarget"
+    },
+    "lefthand": {
+        "prefix": "lefthand"
+    },
+    "righthand": {
+        "prefix": "righthand"
+    },
+    "mount": {
+        "prefix": "mount"
+    },
+    "self": {
+        "prefix": "self"
+    },
+    "bandage": {
+        "prefix": "bandage"
+    },
+    "any": {
+        "prefix": "any",
+        "description": "Can be used in place of containers."
+    },
+    "anycolor": {
+        "prefix": "anycolor",
+        "description": "Match any hue."
+    }
+}

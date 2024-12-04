@@ -1,0 +1,51 @@
+{
+    "name": "legionscript",
+    "displayName": "LegionScript",
+    "description": "Legion Scripting vs code extension",
+    "version": "1.0.0",
+    "publisher": "bittiez",
+    "icon": "images/icon.png",
+    "engines": {
+        "vscode": "^1.23.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "legionscript",
+                "aliases": [
+                    "LegionScript",
+                    "lscript"
+                ],
+                "extensions": [
+                    ".lscript"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "legionscript",
+                "scopeName": "source.legionscript",
+                "path": "./syntaxes/lscript.tmLanguage.json"
+            }
+        ],
+        "themes": [ { 
+            "label": "Zacks", 
+            "uiTheme": "vs-dark", 
+            "path": "./zacks.tmTheme" }
+        ],
+        "snippets": [
+            {
+                "language": "legionscript",
+                "path": "./snippets/lscript.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    }
+}
