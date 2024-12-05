@@ -397,6 +397,21 @@
         "body": "closegump '${1:gumpid}'",
         "description": "Close a gump.\ngumpid is optional."
     },
+    "clearjournal": {
+        "prefix": "clearjournal",
+        "body": "clearjournal",
+        "description": "Clear the journal."
+    },
+    "poplist": {
+        "prefix": "poplist",
+        "body": "poplist '${1:name}' '${2:value}'",
+        "description": "Remove an item from a list."
+    },
+    "ping": {
+        "prefix": "ping",
+        "body": "ping",
+        "description": "Get the current network ping."
+    },
     "name": {
         "prefix": "name",
         "body": "name",
