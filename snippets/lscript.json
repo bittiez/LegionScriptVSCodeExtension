@@ -364,85 +364,109 @@
     },
     "name": {
         "prefix": "name",
+        "body": "name",
         "description": "Char name."
     },
     "hits": {
         "prefix": "hits",
+        "body": "hits",
         "description": "hits."
     },
     "maxhits": {
         "prefix": "maxhits",
+        "body": "maxhits",
         "description": "maxhits."
     },
     "stam": {
         "prefix": "stam",
+        "body": "stam",
         "description": "stam."
     },
     "maxstam": {
         "prefix": "maxstam",
+        "body": "maxstam",
         "description": "maxstam."
     },
     "mana": {
-        "prefix": "mana"
+        "prefix": "mana",
+        "body": "mana"
     },
     "maxmana": {
-        "prefix": "maxmana"
+        "prefix": "maxmana",
+        "body": "maxmana"
     },
     "x": {
         "prefix": "x",
-        "description": "x, y, z."
+        "body": "x",
+        "description": "x position."
     },
     "y": {
         "prefix": "y",
-        "description": "x, y, z."
+        "body": "y",
+        "description": "y position."
     },
     "z": {
         "prefix": "z",
-        "description": "x, y, z."
+        "body": "z",
+        "description": "z position."
     },
     "true": {
-        "prefix": "true"
+        "prefix": "true",
+        "body": "true"
     },
     "false": {
-        "prefix": "false"
+        "prefix": "false",
+        "body": "false"
     },
     "found": {
         "prefix": "found",
+        "body": "found",
         "description": "Available when using commands like findtype."
     },
     "backpack": {
-        "prefix": "backpack"
+        "prefix": "backpack",
+        "body": "backpack"
     },
     "bank": {
-        "prefix": "bank"
+        "prefix": "bank",
+        "body": "bank"
     },
     "lastobject": {
-        "prefix": "lastobject"
+        "prefix": "lastobject",
+        "body": "lastobject"
     },
     "lasttarget": {
-        "prefix": "lasttarget"
+        "prefix": "lasttarget",
+        "body": "lasttarget"
     },
     "lefthand": {
-        "prefix": "lefthand"
+        "prefix": "lefthand",
+        "body": "lefthand"
     },
     "righthand": {
-        "prefix": "righthand"
+        "prefix": "righthand",
+        "body": "righthand"
     },
     "mount": {
-        "prefix": "mount"
+        "prefix": "mount",
+        "body": "mount"
     },
     "self": {
-        "prefix": "self"
+        "prefix": "self",
+        "body": "self"
     },
     "bandage": {
-        "prefix": "bandage"
+        "prefix": "bandage",
+        "body": "bandage"
     },
     "any": {
         "prefix": "any",
+        "body": "any",
         "description": "Can be used in place of containers."
     },
     "anycolor": {
         "prefix": "anycolor",
+        "body": "anycolor",
         "description": "Match any hue."
     }
 }

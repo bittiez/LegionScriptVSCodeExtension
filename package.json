@@ -4,7 +4,6 @@
     "description": "Legion Scripting vs code extension",
     "version": "1.0.0",
     "publisher": "bittiez",
-    "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.23.0"
     },
@@ -32,10 +31,12 @@
                 "path": "./syntaxes/lscript.tmLanguage.json"
             }
         ],
-        "themes": [ { 
-            "label": "Zacks", 
-            "uiTheme": "vs-dark", 
-            "path": "./zacks.tmTheme" }
+        "themes": [
+            {
+                "label": "Zacks",
+                "uiTheme": "vs-dark",
+                "path": "./zacks.tmTheme"
+            }
         ],
         "snippets": [
             {
@@ -47,5 +48,8 @@
     "repository": {
         "type": "git",
         "url": ""
+    },
+    "dependencies": {
+        "vsce": "^2.15.0"
     }
 }
