@@ -362,6 +362,41 @@
         "body": "dead '${1:serial}'",
         "description": "Check if a mobile is dead. Note: If you don't include serial, it will default to yourself."
     },
+    "togglehands": {
+        "prefix": "togglehands",
+        "body": "togglehands '${1|left,right|}'",
+        "description": "Equip/Unequip items in hand."
+    },
+    "equipitem": {
+        "prefix": "equipitem",
+        "body": "equipitem '${1:serial}'",
+        "description": "Equip an item using its serial number."
+    },
+    "togglemounted": {
+        "prefix": "togglemounted",
+        "body": "togglemounted",
+        "description": "Toggle mounted state for the player."
+    },
+    "promptalias": {
+        "prefix": "promptalias",
+        "body": "promptalias '${1:name}'",
+        "description": "Prompt the user to set an alias for a targeted object."
+    },
+    "waitforgump": {
+        "prefix": "waitforgump",
+        "body": "waitforgump '${1:gumpID}' '${2:timeout}'",
+        "description": "Wait for a gump to appear.\ngumpID and timeout are both optional.\n'lastgump' will have the gump id after this."
+    },
+    "replygump": {
+        "prefix": "replygump",
+        "body": "replygump '${1:buttonid}' '${2:gumpid}'",
+        "description": "Reply to a gump with a specific button ID. \ngumpid is optional."
+    },
+    "closegump": {
+        "prefix": "closegump",
+        "body": "closegump '${1:gumpid}'",
+        "description": "Close a gump.\ngumpid is optional."
+    },
     "name": {
         "prefix": "name",
         "body": "name",
