@@ -131,6 +131,10 @@
 			{
 				"name": "support.function.legionscript",
 				"match": "\\b[@]?(getenemy|targetexists|waitingfortarget|getfriend|timer|timerexists|settimer)[!]?\\b"
+			},			
+			{
+				"name": "support.function.legionscript",
+				"match": "\\b[@]?(timerexpired|nearesthostile)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
