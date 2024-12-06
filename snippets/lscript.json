@@ -72,6 +72,25 @@
         ],
         "description": "for to in list"
     },
+    "for_each": {
+        "prefix": "foreach",
+        "body": [
+            "foreach '${1:varname}' in '${2:list}'",
+            "\t$0",
+            "endfor"
+        ],
+        "description": "for to list"
+    },
+    "findtypelist": {
+        "prefix": "findtypelist",
+        "body": "findtypelist '${1:listname}' '${2:source}' '${3:color}' '${4:range}'",
+        "description": "Find items of a specific type in a list and set an alias for the found item."
+    },
+    "itemamt": {
+        "prefix": "itemamt",
+        "body": "itemamt '${1:serial}'",
+        "description": "Get the amount of an item by its serial number."
+    },
     "fly": {
         "prefix": "togglefly",
         "description": "Toggle flying"
@@ -411,6 +430,11 @@
         "prefix": "ping",
         "body": "ping",
         "description": "Get the current network ping."
+    },
+    "targettilerel": {
+        "prefix": "targettilerel",
+        "body": "targettilerel '${1:x}' '${2:y}' '${3:graphic}'",
+        "description": "Target a tile relative to the player's position. Graphic is optional"
     },
     "name": {
         "prefix": "name",

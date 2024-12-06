@@ -10,7 +10,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.legionscript",
-				"match": "\\b(if|elseif|else|endif|while|endwhile|for|to|in|endfor|return)\\b"
+				"match": "\\b(if|elseif|else|endif|while|endwhile|for|foreach|to|in|endfor|return)\\b"
 			},
 			{
 				"name": "keyword.control.legionscript",
@@ -22,31 +22,35 @@
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(fly|land|setability|attack|clearhands|clickobject|bandageself)[!]?\\b"
+				"match": "\\b[@]?(itemamt|targettilerel|fly|attack|clickobject|bandageself)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(usetype|useobject|useonce|clearusequeue|moveitem|moveitemoffset)[!]?\\b"
+				"match": "\\b[@]?(findtypelist)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(movetype|movetypeoffset|walk|turn|run|useskill|feed|rename|shownames)[!]?\\b"
+				"match": "\\b[@]?(usetype|useobject|moveitem|moveitemoffset)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(equipitem|togglemounted|equipwand|buy|sell|clearbuy|clearsell)[!]?\\b"
+				"match": "\\b[@]?(movetype|walk|turn|run|useskill|rename|shownames)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(organizer|autoloot|dress|undress|dressconfig|toggleautoloout)[!]?\\b"
+				"match": "\\b[@]?(equipitem|togglemounted)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(togglescavenger|counter|unsetalias|setalias|findalias|promptalias)[!]?\\b"
+				"match": "\\b[@]?(toggleautoloot)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(contents|inregion|skill|x|y|z|physical|fire|cold|poison|energy)[!]?\\b"
+				"match": "\\b[@]?(unsetalias|setalias|findalias|promptalias)[!]?\\b"
+			},
+			{
+				"name": "support.function.legionscript",
+				"match": "\\b[@]?(contents|skill|x|y|z)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
@@ -54,7 +58,7 @@
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(usequeue|dressing|organizing|followers|maxfollowers|gold|hidden)[!]?\\b"
+				"match": "\\b[@]?(followers|maxfollowers|gold|hidden)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
@@ -118,7 +122,7 @@
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(targettilerelative|cleartargetqueue|autotargetlast|autotargetself)[!]?\\b"
+				"match": "\\b[@]?(cleartargetqueue|autotargetlast|autotargetself)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
@@ -126,7 +130,7 @@
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(autotargettilerelative|autotargetghost|autotargetground|cancelautotarget)[!]?\\b"
+				"match": "\\b[@]?(autotargetghost|autotargetground|cancelautotarget)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
