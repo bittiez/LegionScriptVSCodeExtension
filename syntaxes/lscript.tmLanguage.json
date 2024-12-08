@@ -46,7 +46,7 @@
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(unsetalias|setalias|findalias|promptalias)[!]?\\b"
+				"match": "\\b[@]?(unsetalias|setalias|findalias|promptalias|clearignorelist)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",

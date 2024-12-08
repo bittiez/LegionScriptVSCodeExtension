@@ -178,6 +178,16 @@
         "body": "contextmenu '${1:serial}' '${2:option}'",
         "description": "Send a context menu request and select an option for a specific entity."
     },
+    "clearignorelist": {
+        "prefix": "clearignorelist",
+        "body": "clearignorelist'",
+        "description": "Clear the ignore list."
+    },
+    "ignoreobject": {
+        "prefix": "ignoreobject",
+        "body": "ignoreobject '${1:serial}'",
+        "description": "Ignore an object."
+    },
     "secondaryabilityactive": {
         "prefix": "secondaryabilityactive",
         "body": "secondaryabilityactive",
