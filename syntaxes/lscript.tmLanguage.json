@@ -26,7 +26,7 @@
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(findtypelist)[!]?\\b"
+				"match": "\\b[@]?(findtypelist|primaryabilityactive|secondaryabilityactive)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
@@ -58,47 +58,39 @@
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(followers|maxfollowers|gold|hidden)[!]?\\b"
+				"match": "\\b[@]?(followers|maxfollowers|gold|hidden|weight|maxweight|anycolor|any)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(luck|tithingpoints|weight|maxweight|diffweight|graphic|color)[!]?\\b"
+				"match": "\\b[@]?(dead|paralyzed|poisoned|mounted)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(serial|amount|name|dead|direction|flying|paralyzed|poisoned|mounted)[!]?\\b"
+				"match": "\\b[@]?(criminal|enemy|friend|gray|innocent|invulnerable|murderer)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(yellowhits|war|criminal|enemy|friend|gray|innocent|invulnerable|murderer)[!]?\\b"
+				"match": "\\b[@]?(findobject|distance|buffexists|property|findtype|findlayer)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(findobject|distance|inrange|buffexists|property|findtype|findlayer)[!]?\\b"
+				"match": "\\b[@]?(counttype|inparty|war)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(skillstate|counttype|counttypeground|findwand|inparty|infriendlist|warmode)[!]?\\b"
+				"match": "\\b[@]?(waitforgump|replygump|gumpexists|closegump|injournal|clearjournal)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(waitforgump|replygump|ingump|gumpexists|closegump|injournal|clearjournal)[!]?\\b"
+				"match": "\\b[@]?(waitforjournal|poplist|pushlist|removelist|listexists|createlist)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(waitforjournal|poplist|pushlist|removelist|listexists|list|createlist)[!]?\\b"
+				"match": "\\b[@]?(inlist|clearlist|info|ping|playmacro)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(inlist|clearlist|info|ping|playmacro|playsound|resync|snapshot|hotkeys)[!]?\\b"
-			},
-			{
-				"name": "support.function.legionscript",
-				"match": "\\b[@]?(where|messagebox|mapuo|clickscreen|paperdoll|helpbutton|guildbutton)[!]?\\b"
-			},
-			{
-				"name": "support.function.legionscript",
-				"match": "\\b[@]?(questbutton|logoutbutton|virtue|msg|headmsg|partymsg|allymsg|whispermsg)[!]?\\b"
+				"match": "\\b[@]?(logout|virtue|msg)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
@@ -106,47 +98,23 @@
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(cancelprompt|addfriend|removefriend|contextmenu|waitforcontext)[!]?\\b"
+				"match": "\\b[@]?(cancelprompt|contextmenu|waitforcontext|ignoreboject|clearignorelist)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(ignoreboject|clearignorelist|setskill|waitforproperties|autocolorpick)[!]?\\b"
+				"match": "\\b[@]?(setskill|getproperties|cast|waitfortarget)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(waitforcontents|miniheal|bigheal|cast|chivalryheal|waitfortarget)[!]?\\b"
+				"match": "\\b[@]?(canceltarget|target|targettilerel)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(canceltarget|target|targettype|targetground|targettile|targettileoffset)[!]?\\b"
-			},
-			{
-				"name": "support.function.legionscript",
-				"match": "\\b[@]?(cleartargetqueue|autotargetlast|autotargetself)[!]?\\b"
-			},
-			{
-				"name": "support.function.legionscript",
-				"match": "\\b[@]?(autotargetobject|autotargettype|autotargettile|autotargettileoffset)[!]?\\b"
-			},
-			{
-				"name": "support.function.legionscript",
-				"match": "\\b[@]?(autotargetghost|autotargetground|cancelautotarget)[!]?\\b"
-			},
-			{
-				"name": "support.function.legionscript",
-				"match": "\\b[@]?(getenemy|targetexists|waitingfortarget|getfriend|timer|timerexists|settimer)[!]?\\b"
-			},			
-			{
-				"name": "support.function.legionscript",
-				"match": "\\b[@]?(timerexpired|nearesthostile)[!]?\\b"
-			},
-			{
-				"name": "support.function.legionscript",
-				"match": "\\b[@]?(removetimer|createtimer)[!]?\\b"
+				"match": "\\b[@]?(settimer|removetimer|timerexpired|nearesthostile)[!]?\\b"
 			},
 			{
 				"name": "support.constant.legionscript",
-				"match": "\\b[\\']?(backpack|bank|enemy|friend|ground|last|lasttarget|lastobject)[\\']?\\b"
+				"match": "\\b[\\']?(backpack|bank|lasttarget|lastobject)[\\']?\\b"
 			},
 			{
 				"name": "support.constant.legionscript",

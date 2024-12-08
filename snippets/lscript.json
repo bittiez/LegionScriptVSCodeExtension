@@ -103,6 +103,31 @@
         "prefix": "usesecondaryability",
         "description": "Use secondary ability."
     },
+    "primaryabilityactive": {
+        "prefix": "primaryabilityactive",
+        "body": "primaryabilityactive",
+        "description": "Use primary ability."
+    },
+    "mounted": {
+        "prefix": "mounted",
+        "body": "mounted",
+        "description": "Check if the player is mounted."
+    },
+    "isparalyzed": {
+        "prefix": "paralyzed",
+        "body": "paralyzed '${1:serial}'",
+        "description": "Check if a player or mobile is paralyzed. Omit serial to check your self."
+    },
+    "secondaryabilityactive": {
+        "prefix": "secondaryabilityactive",
+        "body": "secondaryabilityactive",
+        "description": "Use secondary ability."
+    },
+    "virtue": {
+        "prefix": "virtue",
+        "body": "virtue '${1:honor|sacrifice|valor}'",
+        "description": "Invoke a specific virtue."
+    },
     "clickobject": {
         "prefix": "clickobject",
         "body": "clickobject '${1:serial}'",
