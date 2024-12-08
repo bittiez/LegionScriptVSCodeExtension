@@ -42,7 +42,7 @@
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(toggleautoloot)[!]?\\b"
+				"match": "\\b[@]?(toggleautoloot|headmsg|partymsg|guildmsg|allymsg|whispermsg|yellmsg|emotemsg)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
@@ -50,7 +50,7 @@
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(contents|skill|x|y|z)[!]?\\b"
+				"match": "\\b[@]?(contents|skill|x|y|z|waitforprompt|cancelprompt|promptresponse|contextmenu)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",

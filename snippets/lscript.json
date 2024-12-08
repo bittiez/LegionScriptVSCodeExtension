@@ -118,6 +118,66 @@
         "body": "paralyzed '${1:serial}'",
         "description": "Check if a player or mobile is paralyzed. Omit serial to check your self."
     },
+    "playmacro": {
+        "prefix": "playmacro",
+        "body": "playmacro '${1:macroname}'",
+        "description": "Play a specified macro."
+    },
+    "headmsg": {
+        "prefix": "headmsg",
+        "body": "headmsg '${1:serial}' '${2:msg}'",
+        "description": "Display a message above an entity's head."
+    },
+    "partymsg": {
+        "prefix": "partymsg",
+        "body": "partymsg '${1:msg}'",
+        "description": "Send a message to the party chat."
+    },
+    "guildmsg": {
+        "prefix": "guildmsg",
+        "body": "guildmsg '${1:msg}'",
+        "description": "Send a message to the guild chat."
+    },
+    "allymsg": {
+        "prefix": "allymsg",
+        "body": "allymsg '${1:msg}'",
+        "description": "Send a message to the alliance chat."
+    },
+    "whispermsg": {
+        "prefix": "whispermsg",
+        "body": "whispermsg '${1:msg}'",
+        "description": "Send a whisper message."
+    },
+    "yellmsg": {
+        "prefix": "yellmsg",
+        "body": "yellmsg '${1:msg}'",
+        "description": "Send a yell message."
+    },
+    "emotemsg": {
+        "prefix": "emotemsg",
+        "body": "emotemsg '${1:msg}'",
+        "description": "Send an emote message."
+    },
+    "cancelprompt": {
+        "prefix": "cancelprompt",
+        "body": "cancelprompt",
+        "description": "Cancel the current prompt."
+    },
+    "promptresponse": {
+        "prefix": "promptresponse",
+        "body": "promptresponse '${1:msg}'",
+        "description": "Send a response to the current prompt."
+    },
+    "waitforprompt": {
+        "prefix": "waitforprompt",
+        "body": "waitforprompt '${1:duration}'",
+        "description": "Wait for a prompt to appear within a specified timeout."
+    },
+    "contextmenu": {
+        "prefix": "contextmenu",
+        "body": "contextmenu '${1:serial}' '${2:option}'",
+        "description": "Send a context menu request and select an option for a specific entity."
+    },
     "secondaryabilityactive": {
         "prefix": "secondaryabilityactive",
         "body": "secondaryabilityactive",
