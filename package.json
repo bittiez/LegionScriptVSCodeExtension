@@ -3,7 +3,7 @@
     "displayName": "LegionScript",
     "description": "Legion Scripting vs code extension",
     "version": "1.0.0",
-    "publisher": "bittiez",
+    "publisher": "tazmaniantad",
     "engines": {
         "vscode": "^1.23.0"
     },
