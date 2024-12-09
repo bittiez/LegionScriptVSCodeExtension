@@ -2,7 +2,7 @@
     "name": "legionscript",
     "displayName": "LegionScript",
     "description": "Legion Scripting vs code extension",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "publisher": "tazmaniantad",
     "engines": {
         "vscode": "^1.23.0"
