@@ -208,6 +208,16 @@
         "body": "attack '${1:serial}'",
         "description": "Attack a mobile"
     },
+    "goto": {
+        "prefix": "goto",
+        "body": "goto '${1:line}'",
+        "description": "Go to a line in your script. Make sure to also use return"
+    },
+    "return": {
+        "prefix": "return",
+        "body": "return",
+        "description": "Returns to the point you last goto was"
+    },
     "bandageself": {
         "prefix": "bandageself",
         "description": "Try to use bandages on yourself. Depending on your client version this will either send a use bandage on self packet, or it will just use the bandages in which case you need to waitfortarget and target yourself"
