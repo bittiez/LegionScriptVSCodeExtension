@@ -218,6 +218,11 @@
         "body": "return",
         "description": "Returns to the point you last goto was"
     },
+    "follow": {
+        "prefix": "follow",
+        "body": "follow '${1:serial}'",
+        "description": "Follow a mobile"
+    },
     "bandageself": {
         "prefix": "bandageself",
         "description": "Try to use bandages on yourself. Depending on your client version this will either send a use bandage on self packet, or it will just use the bandages in which case you need to waitfortarget and target yourself"

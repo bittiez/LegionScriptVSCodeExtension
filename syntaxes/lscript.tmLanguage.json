@@ -38,7 +38,7 @@
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(equipitem|togglemounted|goto|return)[!]?\\b"
+				"match": "\\b[@]?(equipitem|togglemounted|goto|return|follow)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
