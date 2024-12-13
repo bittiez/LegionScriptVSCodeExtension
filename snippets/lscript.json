@@ -233,7 +233,6 @@
         "body": "cancelpathfind",
         "description": "Cancel pathfinding or auto follow"
     },
-    
     "pathfinding": {
         "prefix": "pathfinding",
         "body": "pathfinding",
@@ -576,6 +575,11 @@
         "prefix": "maxhits",
         "body": "maxhits",
         "description": "maxhits."
+    },
+    "diffhits": {
+        "prefix": "diffhits",
+        "body": "diffhits",
+        "description": "diffhits."
     },
     "stam": {
         "prefix": "stam",

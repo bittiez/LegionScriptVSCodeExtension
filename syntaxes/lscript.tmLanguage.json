@@ -74,7 +74,7 @@
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(counttype|inparty|war)[!]?\\b"
+				"match": "\\b[@]?(counttype|inparty|war|diffhits)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
