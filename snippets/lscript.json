@@ -223,6 +223,22 @@
         "body": "follow '${1:serial}'",
         "description": "Follow a mobile"
     },
+    "pathfind": {
+        "prefix": "pathfind",
+        "body": "pathfind '${1:x}' '${1:y}' '${1:z}'",
+        "description": "Pathfind to a position"
+    },
+    "cancelpathfind": {
+        "prefix": "cancelpathfind",
+        "body": "cancelpathfind",
+        "description": "Cancel pathfinding or auto follow"
+    },
+    
+    "pathfinding": {
+        "prefix": "pathfinding",
+        "body": "pathfinding",
+        "description": "Check if pathfinding or auto following"
+    },
     "bandageself": {
         "prefix": "bandageself",
         "description": "Try to use bandages on yourself. Depending on your client version this will either send a use bandage on self packet, or it will just use the bandages in which case you need to waitfortarget and target yourself"

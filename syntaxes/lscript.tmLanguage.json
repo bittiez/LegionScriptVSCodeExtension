@@ -30,7 +30,7 @@
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(usetype|useobject|moveitem|moveitemoffset)[!]?\\b"
+				"match": "\\b[@]?(usetype|useobject|moveitem|moveitemoffset|cancelpathfind|pathfinding)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
@@ -38,7 +38,7 @@
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(equipitem|togglemounted|goto|return|follow)[!]?\\b"
+				"match": "\\b[@]?(equipitem|togglemounted|goto|return|follow|pathfind)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
