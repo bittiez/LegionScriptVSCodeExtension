@@ -84,7 +84,7 @@
     "findtypelist": {
         "prefix": "findtypelist",
         "body": "findtypelist '${1:listname}' '${2:source}' '${3:color}' '${4:range}'",
-        "description": "Find items of a specific type in a list and set an alias for the found item."
+        "description": "Find items of a specific type in a list and set an alias for the found item. \ncolor is optional and can be 'anycolor', range is optional."
     },
     "itemamt": {
         "prefix": "itemamt",
@@ -93,7 +93,7 @@
     },
     "fly": {
         "prefix": "togglefly",
-        "description": "Toggle flying"
+        "description": "Toggle flying if you are a gargoyle"
     },
     "useprimaryability": {
         "prefix": "useprimaryability",
@@ -106,7 +106,7 @@
     "primaryabilityactive": {
         "prefix": "primaryabilityactive",
         "body": "primaryabilityactive",
-        "description": "Use primary ability."
+        "description": "Check if primary ability is activated."
     },
     "mounted": {
         "prefix": "mounted",
@@ -181,17 +181,17 @@
     "clearignorelist": {
         "prefix": "clearignorelist",
         "body": "clearignorelist'",
-        "description": "Clear the ignore list."
+        "description": "Clear the ignore list for this script."
     },
     "ignoreobject": {
         "prefix": "ignoreobject",
         "body": "ignoreobject '${1:serial}'",
-        "description": "Ignore an object."
+        "description": "Ignore an object. This is specific to this script."
     },
     "secondaryabilityactive": {
         "prefix": "secondaryabilityactive",
         "body": "secondaryabilityactive",
-        "description": "Use secondary ability."
+        "description": "Check if secondary ability is active."
     },
     "virtue": {
         "prefix": "virtue",
@@ -245,27 +245,27 @@
     "useobject": {
         "prefix": "useobject",
         "body": "useobject '${1:serial}' '${2|true,false|}'",
-        "description": "Use (double click) an object"
+        "description": "Use (double click) an object. True/False if you want to use the double click queue."
     },
     "target": {
         "prefix": "target",
         "body": "target '${1:serial}'",
-        "description": "Use your target cursor on an object or mobile"
+        "description": "Use your target cursor on an object or mobile."
     },
     "waitfortarget": {
         "prefix": "waitfortarget",
         "body": "waitfortarget '${1|0,1,2|}' '${2:timeout}'",
-        "description": "Wait for a target cursor"
+        "description": "Wait for a target cursor. 0 = Neutral, 1 = Harmful, 2 = Beneficial"
     },
     "usetype": {
         "prefix": "usetype",
-        "body": "usetype '${1:serial}' '${2:graphic}' '${3:hue}'",
-        "description": "Use an object by object type"
+        "body": "usetype '${1:container}' '${2:graphic}' '${3:hue}'",
+        "description": "Use an object by object type. \n Container can be 'any', hue is optional."
     },
     "pause": {
         "prefix": "pause",
         "body": "pause '${1:duration}'",
-        "description": "Pause the script for a duration in MS"
+        "description": "Pause the script for a duration in MS."
     },
     "useskill": {
         "prefix": "useskill",
@@ -284,7 +284,7 @@
     },
     "canceltarget": {
         "prefix": "canceltarget",
-        "description": "Clear a target cursor"
+        "description": "Clear a target cursor."
     },
     "sysmsg": {
         "prefix": "sysmsg",
@@ -559,7 +559,7 @@
     "targettilerel": {
         "prefix": "targettilerel",
         "body": "targettilerel '${1:x}' '${2:y}' '${3:graphic}'",
-        "description": "Target a tile relative to the player's position. Graphic is optional"
+        "description": "Target a tile relative to the player's position. \nGraphic is optional"
     },
     "name": {
         "prefix": "name",
@@ -569,17 +569,17 @@
     "hits": {
         "prefix": "hits",
         "body": "hits",
-        "description": "hits."
+        "description": "Get current hit points of a mobile."
     },
     "maxhits": {
         "prefix": "maxhits",
         "body": "maxhits",
-        "description": "maxhits."
+        "description": "Get max hits of a mobile."
     },
     "diffhits": {
         "prefix": "diffhits",
         "body": "diffhits",
-        "description": "diffhits."
+        "description": "Get the difference in hits of a mobile. (Maxhits - Hits)"
     },
     "stam": {
         "prefix": "stam",
