@@ -225,7 +225,7 @@
     },
     "pathfind": {
         "prefix": "pathfind",
-        "body": "pathfind '${1:x}' '${1:y}' '${1:z}'",
+        "body": "pathfind '${1:x}' '${2:y}' '${3:z}'",
         "description": "Pathfind to a position"
     },
     "cancelpathfind": {
