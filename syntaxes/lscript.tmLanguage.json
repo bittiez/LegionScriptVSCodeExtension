@@ -106,7 +106,7 @@
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(canceltarget|target|targettilerel)[!]?\\b"
+				"match": "\\b[@]?(canceltarget|target|targettilerel|targetlandrel)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",

@@ -561,6 +561,11 @@
         "body": "targettilerel '${1:x}' '${2:y}' '${3:graphic}'",
         "description": "Target a tile relative to the player's position. \nGraphic is optional"
     },
+    "targetlandrel": {
+        "prefix": "targetlandrel",
+        "body": "targetlandrel '${1:x}' '${2:y}'",
+        "description": "Target land relative to the player's position."
+    },
     "name": {
         "prefix": "name",
         "body": "name",
