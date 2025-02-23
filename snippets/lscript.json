@@ -566,6 +566,11 @@
         "body": "targetlandrel '${1:x}' '${2:y}'",
         "description": "Target land relative to the player's position."
     },
+    "addcooldown": {
+        "prefix": "addcooldown",
+        "body": "addcooldown '${1:text}' '${2:duration ms}' '${3:hue optional}'",
+        "description": "Add a cooldown bar."
+    },
     "name": {
         "prefix": "name",
         "body": "name",

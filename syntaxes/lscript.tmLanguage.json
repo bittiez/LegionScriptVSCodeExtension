@@ -102,7 +102,7 @@
 			},
 			{
 				"name": "support.function.legionscript",
-				"match": "\\b[@]?(setskill|getproperties|cast|waitfortarget)[!]?\\b"
+				"match": "\\b[@]?(setskill|getproperties|cast|waitfortarget|addcooldown)[!]?\\b"
 			},
 			{
 				"name": "support.function.legionscript",
